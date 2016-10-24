@@ -1,0 +1,12 @@
+﻿<Window x:Class="zhibo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Name="StartButton" Content="开始" HorizontalAlignment="Left" Margin="33,54,0,0" VerticalAlignment="Top" Width="75" Click="StartButton_Click"/>
+        <Button Name="EndButton" Content="结束" HorizontalAlignment="Left" Margin="150,54,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.493,-0.943" Click="EndButton_Click" IsEnabled="False"/>
+        <ComboBox Name="RecodEquipment" HorizontalAlignment="Left" Margin="315,54,0,0" VerticalAlignment="Top" Width="120" Initialized="RecodEquipment_Initialized"/>
+        <Label Content="选取设备" HorizontalAlignment="Left" Margin="449,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.189,0.461"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\zhibo.exe.config
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\zhibo.exe
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\zhibo.pdb
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\Microsoft.DirectX.DirectSound.dll
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\Microsoft.DirectX.dll
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\Microsoft.DirectX.xml
+F:\学习资料\项目集\录音\zhibo\zhibo\bin\Release\Microsoft.DirectX.DirectSound.xml
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\MainWindow.baml
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\MainWindow.g.cs
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\App.g.cs
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\zhibo_MarkupCompile.cache
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\zhibo.g.resources
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\zhibo.Properties.Resources.resources
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\zhibo.csproj.GenerateResource.Cache
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\zhibo.exe
+F:\学习资料\项目集\录音\zhibo\zhibo\obj\Release\zhibo.pdb
