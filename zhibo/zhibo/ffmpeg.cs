@@ -8,6 +8,7 @@ using Microsoft.DirectX.DirectSound;
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
+
 namespace zhibo
 {
     class ffemg
@@ -28,12 +29,25 @@ namespace zhibo
 
         #endregion
 
-
+        
         // 访问ffmpeg进程
         static Process p = new Process();
 
         // ffmpeg.exe路径
-        static string ffmpegPath = AppDomain.CurrentDomain.BaseDirectory + @"\ffmpeg-20161012-7cf0ed3-win64-static\ffmpeg-20161012-7cf0ed3-win64-static\bin\ffmpeg.exe";
+        static string ffmpegPath()
+        {
+            string ffmpegpath;
+            string zbbinPath = AppDomain.CurrentDomain.BaseDirectory;
+            string[] temp = zbbinPath.Split("\\".ToCharArray());
+            string upf = "";
+            for (int i = 0; i < temp.Length - 3; i++)
+            {
+                upf += temp[i];
+                upf += "\\";
+            }
+            ffmpegpath = upf + @"ffmpeg-20161012-7cf0ed3-win64-static\ffmpeg-20161012-7cf0ed3-win64-static\bin\ffmpeg.exe";
+            return ffmpegpath;
+        }
         int a;
         /// <summary>
         /// 功能: 录制
@@ -41,12 +55,12 @@ namespace zhibo
         public void Start(string audio,string outFilePath,out bool err)//输出路径
         {
             err = true;
-            string ces;
+            string ffmpegpath = ffmpegPath();
             if (File.Exists(outFilePath))
             {
                 File.Delete(outFilePath);
             }
-            ProcessStartInfo startInfo = new ProcessStartInfo(ffmpegPath);
+            ProcessStartInfo startInfo = new ProcessStartInfo(ffmpegpath);
             startInfo.WindowStyle = ProcessWindowStyle.Normal;
             startInfo.Arguments = "-f dshow -i audio=\"" + audio 
                                 + "\"" + " -draw_mouse 1 -offset_x 0 -offset_y 0 -f GDIgrab -i desktop -vcodec libx264 -hls_time 4 -hls_list_size 0 " 
